@@ -1,0 +1,1 @@
+``docker run  -e POSTGRES_PASSWORD=password -e POSTGRES_HOST_AUTH_METHOD=trust -v $PWD/data:/var/lib/postgresql/data -v $PWD/init.sql:/docker-entrypoint-initdb.d/init.sql -p 5432:5432 --name postgres_local postgres``
